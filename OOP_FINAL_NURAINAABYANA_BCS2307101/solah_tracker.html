@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="solah_pages.css">
+    <title>Solah Tracker for Kids</title>
+</head>
+<nav>
+    <span>SOLAH.TRACKER</span>
+    <ul class="menu"> 
+        <!-- Link to others page -->
+        <li><a href="solah_homepage.html">🏡 Home</a></li>
+        <li><a href="solah_prayertime.html">🕣 Prayer Time</a></li>
+        <li><a href="solah_tracker.html">📑 Track Prayers</a></li>
+        <li><a href="solahgame.html">📿 Solah Tracker Game</a></li>
+        <li><a href="solah_tutorial.html">🧎 How To Pray?</a></li>
+    </ul>
+</nav>
+<body>
+    <div class="container2">
+    <!-- Form for Tracking Prayers -->
+    <h2>Track Child's Prayer</h2>
+    <input type="text" id="childName" placeholder="Child's Name">
+    <input type="number" id="childAge" placeholder="Child's Age">
+    <!-- Prayer Checkboxes -->
+    <br>
+    <label><input type="checkbox" id="fajr"> Fajr</label>
+    <label><input type="checkbox" id="dhuhr"> Dhuhr</label>
+    <label><input type="checkbox" id="asr"> Asr</label>
+    <label><input type="checkbox" id="maghrib"> Maghrib</label>
+    <label><input type="checkbox" id="isha"> Isha</label>
+    <label><input type="checkbox" id="sunnah"> Sunnah</label>
+    <!-- Save / Update Button -->
+    <button id="savePrayerRecord">Save Prayer Record</button>
+    <!-- Display Prayer Records -->
+    <h2>Prayer Records</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Date</th>
+                <th>Fajr</th>
+                <th>Dhuhr</th>
+                <th>Asr</th>
+                <th>Maghrib</th>
+                <th>Isha</th>
+                <th>Sunnah</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="prayerRecordsBody"></tbody>
+    </table>
+    <script src="solah.js"></script> <!-- Link JavaScript file -->
+</div>
+</body>
+<footer>
+    &copy; SOLAH.TRACKER since 2024
+</footer>
+</html>

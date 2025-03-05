@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solah Tracker Game</title>
+    <link rel="stylesheet" href="solahgame.css">
+</head>
+<nav>
+    <span>SOLAH.TRACKER</span>
+    <ul class="menu">
+         <!-- Link to other page -->
+        <li><a href="solah_homepage.html">🏡 Home</a></li>
+        <li><a href="solah_prayertime.html">🕣 Prayer Time</a></li>
+        <li><a href="solah_tracker.html">📑 Track Prayers</a></li>
+        <li><a href="solahgame.html">📿 Solah Tracker Game</a></li>
+        <li><a href="solah_tutorial.html">🧎 How To Pray?</a></li>
+    </ul>
+</nav>
+<body>
+    <div class="container">
+        <h1>Solah Tracker Game</h1>
+        <p>Tap on each prayer when completed!</p>
+        <ul class="prayer-list" id="prayerList">
+            <!-- select section -->
+            <li data-prayer="Fajr">Fajr</li>
+            <li data-prayer="Dhuhr">Dhuhr</li>
+            <li data-prayer="Asr">Asr</li>
+            <li data-prayer="Maghrib">Maghrib</li>
+            <li data-prayer="Isha">Isha</li>
+        </ul>
+        <button id="doneButton">Done</button>
+        <!-- message that tells either you gain points or deduct poins -->
+        <p id="message"></p>
+        <!-- Display points -->
+        <p id="points">Points: 0</p>
+        <!-- display avatar -->
+        <div id="avatars"></div>
+    </div>
+    <script src="solahgame.js"></script>
+</body>
+<footer>
+    &copy; SOLAH.TRACKER since 2024
+</footer>
+</html>

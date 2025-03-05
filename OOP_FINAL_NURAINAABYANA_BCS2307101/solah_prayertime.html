@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times by Zone</title>
+    <link rel="stylesheet" href="solah_pages.css">
+</head>
+<nav>
+    <span>SOLAH.TRACKER</span>
+    <ul class="menu"> 
+        <!-- Link to others page -->
+        <li><a href="solah_homepage.html">🏡 Home</a></li>
+        <li><a href="solah_prayertime.html">🕣 Prayer Time</a></li>
+        <li><a href="solah_tracker.html">📑 Track Prayers</a></li>
+        <li><a href="solahgame.html">📿 Solah Tracker Game</a></li>
+        <li><a href="solah_tutorial.html">🧎 How To Pray?</a></li>
+    </ul>
+</nav>
+<body>
+    <div class="container">
+        <h2>Prayer Times Finder</h2>
+        <!-- Input for zone code -->
+        <input type="text" id="zoneInput" placeholder="Enter Zone Code (e.g., SGR01)">
+        <button onclick="fetchPrayerTimes()">Search</button>
+        <h3>Prayer Times</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Prayer</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="prayerTime">
+                <!-- Display the prayer time -->
+                <tr><td>Day</td> <td id="day"></td></tr>
+                <tr><td>Hijri</td> <td id="hijri"></td></tr>
+                <tr><td>Fajr</td> <td id="fajr"></td></tr>
+                <tr><td>Dhuhr</td> <td id="dhuhr"></td></tr>
+                <tr><td>Asr</td> <td id="asr"></td></tr>
+                <tr><td>Maghrib</td> <td id="maghrib"></td></tr>
+                <tr><td>Isha</td> <td id="isha"></td></tr>
+            </tbody>
+        </table>
+        <script src="solah.js"></script> <!-- Link JavaScript file -->
+    </div>
+</body>
+<footer>
+    &copy; SOLAH.TRACKER since 2024
+</footer>
+</html>
